@@ -9,7 +9,8 @@ import LibraryList from './components/LibraryList'
 const App = () => {
   return (
     <Provider store={createStore(reducers)}>
-      <View>
+      // flex : 1 to make sure that page takes up the entire screen so that the scrolling is uniform
+      <View style={{ flex: 1 }}>
         <Header headerText='Tech Stack' />
         <LibraryList />
       </View>
