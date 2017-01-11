@@ -6,10 +6,11 @@ import reducers from './reducers'
 import { Header } from './components/common'
 import LibraryList from './components/LibraryList'
 
+// flex : 1 to make sure that page takes up the entire screen so that the scrolling is uniform
+
 const App = () => {
   return (
     <Provider store={createStore(reducers)}>
-      // flex : 1 to make sure that page takes up the entire screen so that the scrolling is uniform
       <View style={{ flex: 1 }}>
         <Header headerText='Tech Stack' />
         <LibraryList />
